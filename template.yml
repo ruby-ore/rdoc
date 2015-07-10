@@ -4,8 +4,5 @@ disable:
 ignore:
   - /html/
 
-variables:
-  markup: :rdoc
-
 development_dependencies:
   rdoc: ~> 3.0
