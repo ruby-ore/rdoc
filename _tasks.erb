@@ -1,15 +1,11 @@
 <%- if bundler? -%>
 require 'rdoc/task'
-RDoc::Task.new do |rdoc|
-  rdoc.title = <%= @name.dump %>
-end
+RDoc::Task.new
 <%- else -%>
 begin
   require 'rdoc/task'
 
-  RDoc::Task.new do |rdoc|
-    rdoc.title = <%= @name.dump %>
-  end
+  RDoc::Task.new
 rescue LoadError => e
   task :rdoc do
     abort e.message
