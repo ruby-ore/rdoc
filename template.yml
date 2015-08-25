@@ -5,4 +5,4 @@ ignore:
   - /html/
 
 development_dependencies:
-  rdoc: ~> 3.0
+  rdoc: ~> 4.0
